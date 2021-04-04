@@ -1,0 +1,33 @@
+.all-art
+  padding-bottom: 40px
+  &__wrapper
+    margin-bottom: 45px
+  &__bio
+    max-width: 700px
+  &__title
+    margin-bottom: 16px
+  &-cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__card
+    filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.15))
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      z-index: -1
+      background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, rgba(22, 49, 70, 0.453847) 45.38%, #152532 100%)
+    &--top
+      margin-bottom: 30px
+    &--bot
+      margin-bottom: 48px
+      &--hidden
+        display: none
+  &__button
+    &-wrapper
+      display: flex
+      justify-content: center

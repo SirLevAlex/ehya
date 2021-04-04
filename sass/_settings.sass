@@ -1,0 +1,139 @@
+*
+  box-sizing: border-box
+body
+  font-family: 'Open Sans', sans-serif
+  color: $text-light
+.modal-open
+  overflow: hidden
+img
+  display: inline-block
+  max-width: 100%
+h1, h2, h3, h4, h5, h6
+  font-family: 'Roboto', sans-serif
+  margin: 0
+p
+  margin: 0
+ul
+  display: inline-block
+  list-style: none
+  padding: 0
+  margin: 0
+a
+  display: inline-block
+  text-decoration: none
+input
+  display: flex
+  flex-direction: column
+  justify-content: start
+  font-family: 'Open Sans', sans-serif
+  border: none
+  &:focus
+    outline: none
+button
+  border: none
+  padding: 0
+  cursor: pointer
+  &:focus
+    outline: none
+.button
+  border-radius: 8px
+  &-div
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+  &-index
+    padding: 20px 30px
+    background-color: $button-color
+    color: $text-light
+    position: relative
+    max-width: 160px
+    z-index: 5px
+    margin: 0 auto
+    margin-bottom: 50px
+.header-container, .section-container
+  width: 1140px
+  margin: 0 auto
+.section
+  &-title
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2
+    font-weight: bold
+    color: $text-dark
+  &-description
+    font-size: 18px
+    line-height: 32px
+    color: $input-color
+  &-button
+    padding: 13px 22px
+    font-size: 16px
+    line-height: 22px
+    font-weight: bold
+    color: $button-color
+    border: 2px solid $button-color
+    max-height: 48px
+    background-color: $text-light
+    &--desctop
+      display: inline-block
+    &--mobile
+      display: none
+    &__image
+      margin-left: 11px
+.user
+  display: flex
+  align-items: center
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &--wb
+      padding: 21px 0
+      border-top: 1px solid #E5EAF4
+      border-bottom: 1px solid #E5EAF4
+      margin-top: 36px
+      margin-bottom: 64px
+  &__avatar
+    width: 40px
+    height: 40px
+    object-fit: cover
+    border-radius: 50%
+    margin-right: 12px
+  &__bio
+    display: flex
+    flex-direction: column
+  &__name
+    position: relative
+    font-size: 16px
+    line-height: 22px
+    font-weight: 600
+    margin-bottom: 4px
+    z-index: 99
+    &--head
+      color: $text-dark
+  &__verification
+    display: flex
+    font-size: 14px
+    line-height: 19px
+    font-style: italic
+    color: $input-color
+    align-items: center
+  &__icon
+    margin-right: 8px
+    width: 16px
+    height: 16px
+input.invalid
+  position: relative
+  color: $button-color
+  font-size: 12px
+  line-height: 15px
+label.invalid
+  position: absolute
+  font-size: 10px
+  line-height: 12px
+  color: $button-color
+#mail-error
+  position: absolute
+  font-size: 10px
+  line-height: 12px
+  color: $button-color
+  bottom: -10px

@@ -1,0 +1,38 @@
+.example
+  padding-bottom: 100px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 45px
+  &__button
+    align-self: flex-end
+  &__title
+    margin-bottom: 16px
+  &__slider
+    &-container
+      max-width: 1194px
+    &-wrapper
+      max-width: 1140px
+    &-slide
+      position: relative
+      width: 100%
+      height: 100%
+    &-button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 54px
+      height: 56px
+      background-color: $button-color
+      border-radius: 50%
+      background-repeat: no-repeat
+      background-position: center
+      &--next
+        background-image: url(../img/next-arrow.svg)
+        right: 0
+      &--prev
+        background-image: url(../img/prev-arrow.svg)
+        left: 0
+  &__offer
+    position: relative

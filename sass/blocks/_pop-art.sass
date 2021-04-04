@@ -1,0 +1,33 @@
+.pop-art
+  padding-bottom: 96px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 45px
+  &__bio
+    max-width: 668px
+  &__title
+    margin-bottom: 16px
+  &__button
+    align-self: flex-end
+    margin-bottom: 16px
+  &-cards
+    display: flex
+    justify-content: space-between
+  &__card
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      z-index: -1
+      background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, rgba(22, 49, 70, 0.453847) 45.38%, #152532 100%)
+  &__date
+    color: $footer-text
+.user
+  &__name
+    &--pop
+      color: $text-light

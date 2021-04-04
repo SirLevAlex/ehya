@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ehya - Блог</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-wrapper header-wrapper--fixed">
+          <a href="#" class="header__logo header-logo"
+            ><img
+              src="img/logo.png"
+              alt="icon: logo"
+              class="header-logo__image"
+          /></a>
+          <div class="menu header-menu-wrapper menu--mobile--hidden">
+            <ul class="header-menu">
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">Домой</a>
+              </li>
+              <li data-target="#landing" class="header-menu__item">
+                <a href="#" class="header-menu__link"
+                  >Лендинги
+                  <svg class="header-menu__icon">
+                    <use xlink:href="img/sprite.svg#menuarrow"></use>
+                  </svg>
+                </a>
+                <ul id="landing" class="content landing-menu">
+                  <li class="landing-menu__item">
+                    <a href="#" class="landing-menu__link">Лендинг-1</a>
+                  </li>
+                  <li class="landing-menu__item">
+                    <a href="#" class="landing-menu__link">Лендинг-2</a>
+                  </li>
+                  <li class="landing-menu__item">
+                    <a href="#" class="landing-menu__link">Лендинг-3</a>
+                  </li>
+                </ul>
+              </li>
+              <li data-target="#pages" class="header-menu__item">
+                <a href="#" class="header-menu__link"
+                  >Страницы
+                  <svg class="header-menu__icon">
+                    <use xlink:href="img/sprite.svg#menuarrow"></use>
+                  </svg>
+                </a>
+                <ul id="pages" class="content pages-menu">
+                  <li class="pages-menu__item">
+                    <a href="#" class="pages-menu__link">Страница-1</a>
+                  </li>
+                  <li class="pages-menu__item">
+                    <a href="#" class="pages-menu__link">Страница-2</a>
+                  </li>
+                  <li class="pages-menu__item">
+                    <a href="#" class="pages-menu__link">Страница-3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">Помощь</a>
+              </li>
+            </ul>
+            <button data-toggle="modal" class="button header__button">
+              Получить
+            </button>
+          </div>
+
+          <button class="menu-button header__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <h1 class="header__title">Отдел новостей</h1>
+        <div class="search-wrapper">
+          <form action="#" class="search header__form">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Поиск постов"
+            />
+            <button class="button search__button">Поиск</button>
+          </form>
+          <ul class="pop-tags header__pop-tags">
+            <li class="pop-tags__name">Популярные Тэги :</li>
+            <li class="pop-tags__item">
+              <a href="#" class="pop-tags__link">Design</a>
+            </li>
+            <li class="pop-tags__item">
+              <a href="#" class="pop-tags__link">User Experience</a>
+            </li>
+            <li class="pop-tags__item">
+              <a href="#" class="pop-tags__link">User Interfaces</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img src="img/wave-1.svg" alt="wave" class="header__wave" />
+    </header>
+    <section class="offer-section">
+      <div class="header-offer-wrapper">
+        <div class="offer offer--head">
+          <a href="details.html" class="offer__link"></a>
+          <div class="offer__image-wrapper">
+            <img src="img/header-offer.png" alt="Offer" class="offer__image" />
+          </div>
+          <div class="offer__text">
+            <span class="offer__label">Предложения</span>
+            <h2 class="offer__title">
+              Дешевые Авиабилеты&nbsp;- <br />Отличный Способ Сэкономить
+            </h2>
+            <p class="offer__description">
+              В этом цифровом поколении, где информацию <br />можно легко
+              получить за секунды, визитки ...
+            </p>
+            <div class="user-wrapper offer__wrapper">
+              <div class="user">
+                <img
+                  src="img/header-user.png"
+                  alt="avatar"
+                  class="user__avatar"
+                />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--head"
+                    >Viola Manisa</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date offer__date">02 May</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pop-art">
+      <div class="section-container">
+        <div class="pop-art__wrapper">
+          <div class="pop-art__bio">
+            <h2 class="section-title pop-art__title">Популярные Статьи</h2>
+            <p class="section-description pop-art__description">
+              Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+              короткими и&nbsp;длинными историями команды, стоящей
+              за&nbsp;компанией.
+            </p>
+          </div>
+          <a
+            href="details.html"
+            target="_blank"
+            class="button section-button pop-art__button section-button--desctop"
+          >
+            Смотреть все<img
+              src="img/button-arrow.svg"
+              alt="icon: arrow"
+              class="section-button__image"
+            />
+          </a>
+        </div>
+        <div class="pop-art-cards">
+          <div class="offer-card pop-art__card">
+            <a href="details.html" class="offer-card__link"></a>
+            <img src="img/pop-art-img-1.jpg" alt="" class="offer-card__image" />
+            <span class="offer-card__label">Предложения</span>
+            <h3 class="offer-card__title offer-card__title--bm">
+              Как защитить свою семью от&nbsp;угарного газа
+            </h3>
+            <div class="user-wrapper pop-art__user">
+              <div class="user">
+                <img
+                  src="img/header-user.png"
+                  alt="avatar"
+                  class="user__avatar"
+                />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Viola Manisa</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date pop-art__date">02 May</span>
+            </div>
+          </div>
+          <div class="offer-card pop-art__card">
+            <a href="details.html" class="offer-card__link"></a>
+            <img src="img/pop-art-img-2.jpg" alt="" class="offer-card__image" />
+            <span class="offer-card__label">Предложения</span>
+            <h3 class="offer-card__title offer-card__title--sm">
+              Материнство&nbsp;- самая трудная и&nbsp;лучшая работа на свете
+            </h3>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-2.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Joshua William</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date pop-art__date">02 May</span>
+            </div>
+          </div>
+          <a
+            href="details.html"
+            target="_blank"
+            class="button section-button pop-art__button section-button--mobile"
+          >
+            Смотреть все<img
+              src="img/button-arrow.svg"
+              alt="icon: arrow"
+              class="section-button__image"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="last-art">
+      <div class="section-container">
+        <div class="last-art__wrapper">
+          <div class="last-art__bio">
+            <h2 class="section-title last-art__title">Последние cтатьи</h2>
+            <p class="section-description last-art__description">
+              Вот чем мы занимались в&nbsp;последнее время.
+            </p>
+          </div>
+          <a
+            href="details.html"
+            target="_blank"
+            class="button section-button last-art__button section-button--desctop"
+          >
+            Смотреть все<img
+              src="img/button-arrow.svg"
+              alt="icon: arrow"
+              class="section-button__image"
+            />
+          </a>
+        </div>
+        <div class="last-art-cards">
+          <div class="future-card last-art__card">
+            <a href="details.html" class="future-card__link"></a>
+            <img
+              src="img/last-art-img-1.jpg"
+              alt=""
+              class="future-card__image"
+            />
+            <h3 class="future-card__title">Будущее Работы</h3>
+            <p class="future-card__description">
+              Большинство людей будут работать на&nbsp;рабочих местах, которых
+              сегодня не&nbsp;существует.
+            </p>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-3.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Lina Hicks</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date future-card__date">02 May</span>
+            </div>
+          </div>
+          <div class="future-card last-art__card">
+            <a href="details.html" class="future-card__link"></a>
+            <img
+              src="img/last-art-img-2.jpg"
+              alt=""
+              class="future-card__image"
+            />
+            <h3 class="future-card__title">Будущее Данных</h3>
+            <p class="future-card__description future-card__description--mb-2">
+              Благодаря нескончаемым объемам данных и&nbsp;количеству инсайтов
+            </p>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-4.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Tyler Murray</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date future-card__date">02 May</span>
+            </div>
+          </div>
+          <div class="future-card last-art__card last-art__card--mb-4">
+            <a href="details.html" class="future-card__link"></a>
+            <img
+              src="img/last-art-img-3.jpg"
+              alt=""
+              class="future-card__image"
+            />
+            <h3 class="future-card__title">Будущее Обучения</h3>
+            <p class="future-card__description future-card__description--mb-2">
+              Постоянная способность учиться будет на&nbsp;самых важных
+              <br class="future-card__br" />навыках.
+            </p>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-5.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Warren Casey</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date future-card__date">02 May</span>
+            </div>
+          </div>
+          <a
+            href="details.html"
+            target="_blank"
+            class="button section-button last-art__button section-button--mobile"
+          >
+            Смотреть все<img
+              src="img/button-arrow.svg"
+              alt="icon: arrow"
+              class="section-button__image"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="example">
+      <div class="section-container">
+        <div class="example__wrapper">
+          <div class="example__bio">
+            <h2 class="section-title example__title">Примеры из практики</h2>
+            <p class="section-description example__description">
+              Вот чем мы занимались в&nbsp;последнее время.
+            </p>
+          </div>
+          <a
+            href="details.html"
+            target="_blank"
+            class="button section-button example__button section-button--desctop"
+          >
+            Смотреть все<img
+              src="img/button-arrow.svg"
+              alt="icon: arrow"
+              class="section-button__image"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="swiper-container example__slider-container">
+        <div class="swiper-wrapper example__slider-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide example__slider-slide">
+            <div class="offer example__offer">
+              <a href="details.html" class="offer__link"></a>
+              <div class="offer__image-wrapper">
+                <img src="img/offer-1.png" alt="Offer" class="offer__image" />
+              </div>
+              <div class="offer__text">
+                <span class="offer__label">Предложения</span>
+                <h2 class="offer__title">
+                  Дешевые Авиабилеты&nbsp;- <br />Отличный Способ Сэкономить
+                </h2>
+                <p class="offer__description">
+                  В этом цифровом поколении, где информацию <br />можно легко
+                  получить за секунды, визитки ...
+                </p>
+                <div class="user-wrapper offer__wrapper">
+                  <div class="user">
+                    <img
+                      src="img/header-user.png"
+                      alt="avatar"
+                      class="user__avatar"
+                    />
+                    <div class="user__bio">
+                      <a
+                        href="details.html"
+                        target="_blank"
+                        class="user__name user__name--head"
+                        >Viola Manisa</a
+                      >
+                      <span class="user__verification"
+                        ><img
+                          src="img/check-mark.svg"
+                          alt="icon: Verified"
+                          class="user__icon"
+                        />
+                        Verified writer</span
+                      >
+                    </div>
+                  </div>
+                  <span class="date offer__date">02 May</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide example__slider-slide">
+            <div class="offer example__offer">
+              <a href="details.html" class="offer__link"></a>
+              <div class="offer__image-wrapper">
+                <img
+                  src="img/header-offer.png"
+                  alt="Offer"
+                  class="offer__image"
+                />
+              </div>
+              <div class="offer__text">
+                <span class="offer__label">Предложения</span>
+                <h2 class="offer__title">
+                  Дешевые Авиабилеты&nbsp;- <br />Отличный Способ Сэкономить
+                </h2>
+                <p class="offer__description">
+                  В этом цифровом поколении, где информацию <br />можно легко
+                  получить за секунды, визитки ...
+                </p>
+                <div class="user-wrapper offer__wrapper">
+                  <div class="user">
+                    <img
+                      src="img/header-user.png"
+                      alt="avatar"
+                      class="user__avatar"
+                    />
+                    <div class="user__bio">
+                      <a
+                        href="details.html"
+                        target="_blank"
+                        class="user__name user__name--head"
+                        >Viola Manisa</a
+                      >
+                      <span class="user__verification"
+                        ><img
+                          src="img/check-mark.svg"
+                          alt="icon: Verified"
+                          class="user__icon"
+                        />
+                        Verified writer</span
+                      >
+                    </div>
+                  </div>
+                  <span class="date offer__date">02 May</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide example__slider-slide">
+            <div class="offer example__offer">
+              <a href="details.html" class="offer__link"></a>
+              <div class="offer__image-wrapper">
+                <img src="img/offer-1.png" alt="Offer" class="offer__image" />
+              </div>
+              <div class="offer__text">
+                <span class="offer__label">Предложения</span>
+                <h2 class="offer__title">
+                  Дешевые Авиабилеты&nbsp;- <br />Отличный Способ Сэкономить
+                </h2>
+                <p class="offer__description">
+                  В этом цифровом поколении, где информацию <br />можно легко
+                  получить за секунды, визитки ...
+                </p>
+                <div class="user-wrapper offer__wrapper">
+                  <div class="user">
+                    <img
+                      src="img/header-user.png"
+                      alt="avatar"
+                      class="user__avatar"
+                    />
+                    <div class="user__bio">
+                      <a
+                        href="details.html"
+                        target="_blank"
+                        class="user__name user__name--head"
+                        >Viola Manisa</a
+                      >
+                      <span class="user__verification"
+                        ><img
+                          src="img/check-mark.svg"
+                          alt="icon: Verified"
+                          class="user__icon"
+                        />
+                        Verified writer</span
+                      >
+                    </div>
+                  </div>
+                  <span class="date offer__date">02 May</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <button
+          class="example__slider-button example__slider-button--prev"
+        ></button>
+        <button
+          class="example__slider-button example__slider-button--next"
+        ></button>
+      </div>
+      <div class="example__button-wrapper">
+        <a
+          href="details.html"
+          target="_blank"
+          class="button section-button example__button section-button--mobile"
+        >
+          Смотреть все<img
+            src="img/button-arrow.svg"
+            alt="icon: arrow"
+            class="section-button__image"
+          />
+        </a>
+      </div>
+    </section>
+    <section class="all-art">
+      <div class="section-container">
+        <div class="all-art__wrapper">
+          <div class="all-art__bio">
+            <h2 class="section-title all-art__title">Все cтатьи</h2>
+            <p class="section-description all-art__description">
+              Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+              короткими и длинными историями команды, стоящей за компанией.
+            </p>
+          </div>
+        </div>
+        <div class="all-art-cards">
+          <div
+            class="offer-card all-art__card all-art__card--top all-art__card--top--1"
+          >
+            <a href="details.html" class="offer-card__link"></a>
+            <img src="img/offer-card-1.jpg" alt="" class="offer-card__image" />
+            <span class="offer-card__label">Предложения</span>
+            <h3 class="offer-card__title offer-card__title--bm">
+              Как защитить свою семью от&nbsp;угарного газа
+            </h3>
+            <div class="user-wrapper">
+              <div class="user">
+                <img
+                  src="img/header-user.png"
+                  alt="avatar"
+                  class="user__avatar"
+                />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Viola Manisa</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date all-art__date">02 May</span>
+            </div>
+          </div>
+          <div
+            class="offer-card all-art__card all-art__card--top all-art__card--top--2"
+          >
+            <a href="details.html" class="offer-card__link"></a>
+            <img src="img/offer-card-2.jpg" alt="" class="offer-card__image" />
+            <span class="offer-card__label">Предложения</span>
+            <h3 class="offer-card__title offer-card__title--sm">
+              Материнство&nbsp;- самая трудная и&nbsp;лучшая работа на свете
+            </h3>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-2.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Joshua William</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date all-art__date">02 May</span>
+            </div>
+          </div>
+          <div
+            class="future-card all-art__card all-art__card--bot all-art__card--bot--1"
+          >
+            <a href="details.html" class="future-card__link"></a>
+            <img
+              src="img/future-card-1.jpg"
+              alt=""
+              class="future-card__image"
+            />
+            <h3 class="future-card__title">Будущее Работы</h3>
+            <p class="future-card__description">
+              Большинство людей будут работать на&nbsp;рабочих местах, которых
+              сегодня не&nbsp;существует.
+            </p>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-3.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Lina Hicks</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date future-card__date">02 May</span>
+            </div>
+          </div>
+          <div
+            class="future-card all-art__card all-art__card--bot all-art__card--bot--2"
+          >
+            <a href="details.html" class="future-card__link"></a>
+            <img
+              src="img/future-card-2.jpg"
+              alt=""
+              class="future-card__image"
+            />
+            <h3 class="future-card__title">Будущее Данных</h3>
+            <p class="future-card__description future-card__description--mb-2">
+              Благодаря нескончаемым объемам данных и&nbsp;количеству инсайтов
+            </p>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-4.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Tyler Murray</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date future-card__date">02 May</span>
+            </div>
+          </div>
+          <div
+            class="future-card all-art__card all-art__card--bot all-art__card--bot--hidden"
+          >
+            <a href="details.html" class="future-card__link"></a>
+            <img
+              src="img/future-card-2.jpg"
+              alt=""
+              class="future-card__image"
+            />
+            <h3 class="future-card__title">Будущее Данных</h3>
+            <p class="future-card__description future-card__description--mb-2">
+              Благодаря нескончаемым объемам данных и&nbsp;количеству инсайтов
+            </p>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-4.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Tyler Murray</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date future-card__date">02 May</span>
+            </div>
+          </div>
+          <div
+            class="future-card all-art__card all-art__card--bot all-art__card--bot--3"
+          >
+            <img
+              src="img/future-card-3.jpg"
+              alt=""
+              class="future-card__image"
+            />
+            <h3 class="future-card__title">Будущее Обучения</h3>
+            <p class="future-card__description future-card__description--mb-2">
+              Постоянная способность учиться будет на&nbsp;самых важных
+              <br class="future-card__br" />навыках.
+            </p>
+            <div class="user-wrapper">
+              <div class="user">
+                <img src="img/user-5.png" alt="avatar" class="user__avatar" />
+                <div class="user__bio">
+                  <a
+                    href="details.html"
+                    target="_blank"
+                    class="user__name user__name--pop"
+                    >Warren Casey</a
+                  >
+                  <span class="user__verification"
+                    ><img
+                      src="img/check-mark.svg"
+                      alt="icon: Verified"
+                      class="user__icon"
+                    />
+                    Verified writer</span
+                  >
+                </div>
+              </div>
+              <span class="date future-card__date">02 May</span>
+            </div>
+          </div>
+        </div>
+        <div class="all-art__button-wrapper">
+          <a
+            href="details.html"
+            target="_blank"
+            class="button section-button all-art__button"
+          >
+            Больше постов<img
+              src="img/button-arrow.svg"
+              alt="icon: arrow"
+              class="section-button__image"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <img src="img/wave-2.svg" alt="wave" class="newsletter-wave" />
+      <div class="newsletter__bg">
+        <div class="section-container">
+          <div class="newsletter__wrapper">
+            <div class="newsletter__bio">
+              <h2 class="newsletter__title">
+                Получите наши истории на&nbsp;ваш почтовый ящик еженедельно.
+              </h2>
+              <form
+                action="send.php"
+                method="POST"
+                class="form newsletter__form"
+              >
+                <input
+                  type="email"
+                  class="newsletter__input"
+                  name="mail"
+                  placeholder="Ваш Email"
+                  required
+                />
+                <button class="button newsletter__button" name="btnNew">
+                  Начать
+                </button>
+              </form>
+              <p class="newsletter__description">
+                Получите ответ завтра, если отправите его до 9 вечера сегодня.
+                Если мы получили после 9 вечера, мы получим ответ на следующий
+                день.
+              </p>
+            </div>
+            <div class="image-bg">
+              <div class="image-wrapper">
+                <img
+                  src="img/newsletter-img.jpg"
+                  alt="image"
+                  class="newsletter__image"
+                />
+                <h3 class="image-wrapper__title">
+                  Лучшие статьи каждую неделю
+                </h3>
+                <p class="image-wrapper__description">
+                  Наши предложения по страхованию везде одинаковы.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer__wrapper">
+          <div class="footer__bio">
+            <img src="img/logo.png" alt="icon: logo" class="footer__logo" />
+            <p class="footer__description">
+              Создайте современный и&nbsp;креативный веб-сайт с&nbsp;crealand
+            </p>
+            <ul class="footer-social">
+              <li class="footer-social__item">
+                <a
+                  href="https://www.google.ru"
+                  target="_blank"
+                  class="footer-social__link"
+                  ><svg class="footer-social__icon">
+                    <use xlink:href="img/sprite.svg#google"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item">
+                <a
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  class="footer-social__link"
+                  ><svg class="footer-social__icon">
+                    <use xlink:href="img/sprite.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item">
+                <a
+                  href="https://www.instagram.com/?hl=ru"
+                  target="_blank"
+                  class="footer-social__link"
+                  ><svg class="footer-social__icon">
+                    <use xlink:href="img/sprite.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item">
+                <a
+                  href="https://www.linkedin.com/login"
+                  target="_blank"
+                  class="footer-social__link"
+                  ><svg class="footer-social__icon">
+                    <use xlink:href="img/sprite.svg#linkedin"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item">
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  class="footer-social__link"
+                  ><svg class="footer-social__icon">
+                    <use xlink:href="img/sprite.svg#youtube"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="product footer__product">
+            <h3 class="footer__title">Продукт</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Лендинг</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Функции</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Документация</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Скидки</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Расценки</a>
+              </li>
+            </ul>
+          </div>
+          <div class="service footer__service">
+            <h3 class="footer__title">Сервисы</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Документация</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Дизайн</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Темы</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Иллюстрации</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">UI Kit</a>
+              </li>
+            </ul>
+          </div>
+          <div class="company footer__company">
+            <h3 class="footer__title">Компания</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Условия</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  >Политика <br class="footer-br" />конфиденциальности</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="other footer__other">
+            <h3 class="footer__title">Более</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Документация</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Лицензия</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Измененния</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom footer__bottom">
+          <div class="bottom__image">
+            <img src="img/heart.svg" alt="icon: heart" />
+          </div>
+          <span class="bottom__text">Copyright © 2019. Crafted with love.</span>
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <svg class="modal__close">
+          <use xlink:href="img/sprite.svg#closebutton"></use>
+        </svg>
+        <h3 class="modal__title">Отправить запрос</h3>
+        <form action="send.php" method="POST" class="form modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Ваше полное имя*"
+            name="name"
+            minlength="2"
+            required
+          />
+          <input
+            type="tel"
+            class="phone input modal__input"
+            placeholder="Номер телефона*"
+            name="phone"
+            minlength="18"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Ваш Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="modal__message"
+            cols="30"
+            rows="10"
+            placeholder="Сообщение"
+            name="message"
+          ></textarea>
+          <div class="modal__form-wrapper">
+            <button class="button modal__button" name="btnMod" type="submit">
+              Отправить
+            </button>
+            <span class="modal__info">* Обязательно</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

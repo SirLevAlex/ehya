@@ -1,0 +1,95 @@
+.modal
+  position: relative
+  &__close
+    position: absolute
+    fill: $text-light
+    width: 16px
+    height: 16px
+    right: 20px
+    top: 20px
+  &__form
+    margin-bottom: 33px
+    &-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &__overlay
+    visibility: hidden
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    background-color: rgba(16, 137, 207, 0.219)
+    z-index: 100
+    transition: opacity 0.2s
+    &--active
+      visibility: visible
+  &__dialog
+    visibility: hidden
+    position: fixed
+    padding: 33px 88px 0
+    max-width: 478px
+    max-height: 90%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: $text-dark
+    color: $text-light
+    border-radius: 16px
+    z-index: 101
+    transition: opacity 0.2s
+    overflow-y: auto
+    &--active
+      visibility: visible
+  &__title
+    font-size: 20px
+    line-height: 24px
+    font-weight: bold
+    margin-bottom: 15px
+    text-align: center
+  &__input
+    background-color: $text-light
+    border-radius: 8px
+    border: none
+    width: 100%
+    min-width: 302px
+    height: 50px
+    padding: 0 23px
+    font-size: 14px
+    line-height: 20px
+    margin-top: 15px
+    outline: none
+    color: $footer-text
+    &:first-child
+      margin-top: 0
+  &__message
+    background-color: $text-light
+    color: $footer-text
+    width: 100%
+    min-width: 302px
+    border-radius: 8px
+    padding: 18px 23px
+    border: none
+    margin-bottom: 15px
+    margin-top: 15px
+    resize: none
+    height: 123px
+    font-size: 14px
+    line-height: 20px
+    outline: none
+    overflow-y: auto
+  &__button
+    font-size: 16px
+    line-height: 22px
+    font-weight: bold
+    min-width: 160px
+    min-height: 50px
+    background-color: $button-color
+    border-radius: 8px
+    color: $text-light
+  &__info
+    font-size: 14px
+    line-height: 20px
+    font-weight: bold
