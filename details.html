@@ -456,12 +456,14 @@
                   </p>
                 </div>
               </div>
-              <form action="send.php" method="POST" class="comment-form">
+              <form action="send.php" method="POST" class="form comment-form">
                 <input
                   type="text"
                   class="comment-input"
                   name="comment"
                   placeholder="Написать комментарий..."
+                  minlength="2"
+                  required
                 />
                 <img
                   src="img/comment-user-2.png"

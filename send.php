@@ -80,5 +80,5 @@ if (isset($_POST['btnNew'])) {
 } else if (isset($_POST['btnMod'])) {
   header('Location: thankyou.html');
 } else if (isset($_POST['btnComment'])) {
-  header('Location: details.html');
+  header('Location: comment.html');
 }

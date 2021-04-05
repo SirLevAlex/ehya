@@ -94,6 +94,10 @@ $(document).ready(function () {
         mail: {
           required: "Нам нужен ваш email, чтобы связаться",
           email: "Формат email name@domain.com"
+        },
+        comment: {
+          required: "Напишите свой комментарий",
+          minlength: "Комментарий минимум 2 символа"
         }
       }
     });
@@ -109,4 +113,22 @@ $(document).ready(function () {
     });
   });
 
+  $(document).on("scroll", window, function () {
+    if ($(window).scrollTop() > 100) {
+      showTop();
+    }
+    else {
+      hideTop();
+    }
+  });
+
+  function showTop() {
+    let toTop = $(".to-top");
+    toTop.addClass("to-top--active");
+  }
+
+  function hideTop() {
+    let toTop = $(".to-top");
+    toTop.removeClass("to-top--active");
+  }
 });
