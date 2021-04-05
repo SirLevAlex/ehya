@@ -21,7 +21,7 @@
         <div
           class="header-wrapper header-wrapper--fixed header-wrapper--details"
         >
-          <a href="#" class="header__logo header-logo"
+          <a href="index.html" class="header__logo header-logo"
             ><img
               src="img/logo.png"
               alt="icon: logo"
@@ -450,10 +450,11 @@
                   </p>
                 </div>
               </div>
-              <form action="#" class="comment-form">
+              <form action="send.php" method="POST" class="comment-form">
                 <input
                   type="text"
                   class="comment-input"
+                  name="comment"
                   placeholder="Написать комментарий..."
                 />
                 <img
@@ -461,7 +462,9 @@
                   alt="avatar"
                   class="form-image"
                 />
-                <button class="button comment-button">Комментировать</button>
+                <button class="button comment-button" name="btnComment">
+                  Комментировать
+                </button>
               </form>
             </div>
           </div>
@@ -489,7 +492,9 @@
                   placeholder="Ваш Email"
                   required
                 />
-                <button class="button newsletter__button">Начать</button>
+                <button class="button newsletter__button" name="btnNew">
+                  Начать
+                </button>
               </form>
               <p class="newsletter__description">
                 Получите ответ завтра, если отправите его до 9 вечера сегодня.
@@ -520,7 +525,9 @@
       <div class="footer-container">
         <div class="footer__wrapper footer__wrapper--details">
           <div class="footer__bio">
-            <img src="img/logo.png" alt="icon: logo" class="footer__logo" />
+            <a href="index.html"
+              ><img src="img/logo.png" alt="icon: logo" class="footer__logo"
+            /></a>
             <p class="footer__description">
               Создайте современный и&nbsp;креативный веб-сайт с&nbsp;crealand
             </p>

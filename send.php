@@ -9,26 +9,33 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
+$tmail=$_POST['mail'];
 $message = $_POST['message'];
+$comment = $_POST['comment'];
 
 // Формирование самого письма
 if (isset($_POST['btnNew'])) {
-  $title = "Ehya subsribe";
+  $title = "Ehya подписка";
   $body = "
-  <h2>New subscriber</h2>
-  <b>Email:</b> $email<br>
+  <h2>Новый подписчик</h2>
+  <b>Email:</b> $tmail<br>
   "; 
 } else if (isset($_POST['btnMod'])) {
-  $title = "New message Ehya";
+  $title = "Новое сообщение Ehya";
   $body = "
-  <h2>New message</h2>
+  <h2>Новое сообщение</h2>
   <b>Name:</b> $name<br>
   <b>Phone:</b> $phone<br>
   <b>Email:</b> $email<br>
   <b>Message:</b><br>$message
   ";
+} else if (isset($_POST['btnComment'])) {
+    $title = "Новый комментарий Ehya";
+  $body = "
+  <h2>Новый комментарий</h2>
+  <b>Comment:</b> $comment<br>
+  "; 
 }
-
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -72,4 +79,6 @@ if (isset($_POST['btnNew'])) {
   header('Location: subscribe.html');
 } else if (isset($_POST['btnMod'])) {
   header('Location: thankyou.html');
+} else if (isset($_POST['btnComment'])) {
+  header('Location: details.html');
 }
