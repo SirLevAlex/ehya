@@ -17,97 +17,98 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <div class="header-wrapper header-wrapper--fixed">
-          <a href="#" class="header__logo header-logo"
-            ><img
-              src="img/logo.png"
-              alt="icon: logo"
-              class="header-logo__image"
-          /></a>
-          <div class="menu header-menu-wrapper menu--mobile--hidden">
-            <ul class="header-menu">
-              <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Домой</a>
-              </li>
-              <li data-target="#landing" class="header-menu__item">
-                <a href="#" class="header-menu__link"
-                  >Лендинги
-                  <svg class="header-menu__icon">
-                    <use xlink:href="img/sprite.svg#menuarrow"></use>
-                  </svg>
-                </a>
-                <ul id="landing" class="content landing-menu">
-                  <li class="landing-menu__item">
-                    <a href="#" class="landing-menu__link">Лендинг-1</a>
-                  </li>
-                  <li class="landing-menu__item">
-                    <a href="#" class="landing-menu__link">Лендинг-2</a>
-                  </li>
-                  <li class="landing-menu__item">
-                    <a href="#" class="landing-menu__link">Лендинг-3</a>
-                  </li>
-                </ul>
-              </li>
-              <li data-target="#pages" class="header-menu__item">
-                <a href="#" class="header-menu__link"
-                  >Страницы
-                  <svg class="header-menu__icon">
-                    <use xlink:href="img/sprite.svg#menuarrow"></use>
-                  </svg>
-                </a>
-                <ul id="pages" class="content pages-menu">
-                  <li class="pages-menu__item">
-                    <a href="#" class="pages-menu__link">Страница-1</a>
-                  </li>
-                  <li class="pages-menu__item">
-                    <a href="#" class="pages-menu__link">Страница-2</a>
-                  </li>
-                  <li class="pages-menu__item">
-                    <a href="#" class="pages-menu__link">Страница-3</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Помощь</a>
-              </li>
-            </ul>
-            <button data-toggle="modal" class="button header__button">
-              Получить
+      <div class="header-bg">
+        <div class="header-container">
+          <div class="header-wrapper header-wrapper--fixed">
+            <a href="index.html" class="header__logo header-logo"
+              ><img
+                src="img/logo.png"
+                alt="icon: logo"
+                class="header-logo__image"
+            /></a>
+            <div class="menu header-menu-wrapper menu--mobile--hidden">
+              <ul class="header-menu">
+                <li class="header-menu__item">
+                  <a href="#" class="header-menu__link">Домой</a>
+                </li>
+                <li data-target="#landing" class="header-menu__item">
+                  <a href="#" class="header-menu__link"
+                    >Лендинги
+                    <svg class="header-menu__icon">
+                      <use xlink:href="img/sprite.svg#menuarrow"></use>
+                    </svg>
+                  </a>
+                  <ul id="landing" class="content landing-menu">
+                    <li class="landing-menu__item">
+                      <a href="#" class="landing-menu__link">Лендинг-1</a>
+                    </li>
+                    <li class="landing-menu__item">
+                      <a href="#" class="landing-menu__link">Лендинг-2</a>
+                    </li>
+                    <li class="landing-menu__item">
+                      <a href="#" class="landing-menu__link">Лендинг-3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li data-target="#pages" class="header-menu__item">
+                  <a href="#" class="header-menu__link"
+                    >Страницы
+                    <svg class="header-menu__icon">
+                      <use xlink:href="img/sprite.svg#menuarrow"></use>
+                    </svg>
+                  </a>
+                  <ul id="pages" class="content pages-menu">
+                    <li class="pages-menu__item">
+                      <a href="#" class="pages-menu__link">Страница-1</a>
+                    </li>
+                    <li class="pages-menu__item">
+                      <a href="#" class="pages-menu__link">Страница-2</a>
+                    </li>
+                    <li class="pages-menu__item">
+                      <a href="#" class="pages-menu__link">Страница-3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-menu__item">
+                  <a href="#" class="header-menu__link">Помощь</a>
+                </li>
+              </ul>
+              <button data-toggle="modal" class="button header__button">
+                Получить
+              </button>
+            </div>
+            <button class="menu-button header__menu-button">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
             </button>
           </div>
-
-          <button class="menu-button header__menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-          </button>
+          <h1 class="header__title">Отдел новостей</h1>
+          <div class="search-wrapper">
+            <form action="#" class="search header__form">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Поиск постов"
+              />
+              <button class="button search__button">Поиск</button>
+            </form>
+            <ul class="pop-tags header__pop-tags">
+              <li class="pop-tags__name">Популярные Тэги :</li>
+              <li class="pop-tags__item">
+                <a href="#" class="pop-tags__link">Design</a>
+              </li>
+              <li class="pop-tags__item">
+                <a href="#" class="pop-tags__link">User Experience</a>
+              </li>
+              <li class="pop-tags__item">
+                <a href="#" class="pop-tags__link">User Interfaces</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <h1 class="header__title">Отдел новостей</h1>
-        <div class="search-wrapper">
-          <form action="#" class="search header__form">
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Поиск постов"
-            />
-            <button class="button search__button">Поиск</button>
-          </form>
-          <ul class="pop-tags header__pop-tags">
-            <li class="pop-tags__name">Популярные Тэги :</li>
-            <li class="pop-tags__item">
-              <a href="#" class="pop-tags__link">Design</a>
-            </li>
-            <li class="pop-tags__item">
-              <a href="#" class="pop-tags__link">User Experience</a>
-            </li>
-            <li class="pop-tags__item">
-              <a href="#" class="pop-tags__link">User Interfaces</a>
-            </li>
-          </ul>
-        </div>
+        <img src="img/wave-1.svg" alt="wave" class="header__wave" />
       </div>
-      <img src="img/wave-1.svg" alt="wave" class="header__wave" />
     </header>
     <section class="offer-section">
       <div class="header-offer-wrapper">
@@ -133,10 +134,7 @@
                   class="user__avatar"
                 />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--head"
+                  <a href="details.html" class="user__name user__name--head"
                     >Viola Manisa</a
                   >
                   <span class="user__verification"
@@ -168,7 +166,6 @@
           </div>
           <a
             href="details.html"
-            target="_blank"
             class="button section-button pop-art__button section-button--desctop"
           >
             Смотреть все<img
@@ -194,10 +191,7 @@
                   class="user__avatar"
                 />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Viola Manisa</a
                   >
                   <span class="user__verification"
@@ -224,10 +218,7 @@
               <div class="user">
                 <img src="img/user-2.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Joshua William</a
                   >
                   <span class="user__verification"
@@ -245,7 +236,6 @@
           </div>
           <a
             href="details.html"
-            target="_blank"
             class="button section-button pop-art__button section-button--mobile"
           >
             Смотреть все<img
@@ -268,7 +258,6 @@
           </div>
           <a
             href="details.html"
-            target="_blank"
             class="button section-button last-art__button section-button--desctop"
           >
             Смотреть все<img
@@ -295,10 +284,7 @@
               <div class="user">
                 <img src="img/user-3.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Lina Hicks</a
                   >
                   <span class="user__verification"
@@ -329,10 +315,7 @@
               <div class="user">
                 <img src="img/user-4.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Tyler Murray</a
                   >
                   <span class="user__verification"
@@ -364,10 +347,7 @@
               <div class="user">
                 <img src="img/user-5.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Warren Casey</a
                   >
                   <span class="user__verification"
@@ -385,7 +365,6 @@
           </div>
           <a
             href="details.html"
-            target="_blank"
             class="button section-button last-art__button section-button--mobile"
           >
             Смотреть все<img
@@ -408,7 +387,6 @@
           </div>
           <a
             href="details.html"
-            target="_blank"
             class="button section-button example__button section-button--desctop"
           >
             Смотреть все<img
@@ -445,10 +423,7 @@
                       class="user__avatar"
                     />
                     <div class="user__bio">
-                      <a
-                        href="details.html"
-                        target="_blank"
-                        class="user__name user__name--head"
+                      <a href="details.html" class="user__name user__name--head"
                         >Viola Manisa</a
                       >
                       <span class="user__verification"
@@ -493,10 +468,7 @@
                       class="user__avatar"
                     />
                     <div class="user__bio">
-                      <a
-                        href="details.html"
-                        target="_blank"
-                        class="user__name user__name--head"
+                      <a href="details.html" class="user__name user__name--head"
                         >Viola Manisa</a
                       >
                       <span class="user__verification"
@@ -537,10 +509,7 @@
                       class="user__avatar"
                     />
                     <div class="user__bio">
-                      <a
-                        href="details.html"
-                        target="_blank"
-                        class="user__name user__name--head"
+                      <a href="details.html" class="user__name user__name--head"
                         >Viola Manisa</a
                       >
                       <span class="user__verification"
@@ -570,7 +539,6 @@
       <div class="example__button-wrapper">
         <a
           href="details.html"
-          target="_blank"
           class="button section-button example__button section-button--mobile"
         >
           Смотреть все<img
@@ -610,10 +578,7 @@
                   class="user__avatar"
                 />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Viola Manisa</a
                   >
                   <span class="user__verification"
@@ -642,10 +607,7 @@
               <div class="user">
                 <img src="img/user-2.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Joshua William</a
                   >
                   <span class="user__verification"
@@ -679,10 +641,7 @@
               <div class="user">
                 <img src="img/user-3.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Lina Hicks</a
                   >
                   <span class="user__verification"
@@ -715,10 +674,7 @@
               <div class="user">
                 <img src="img/user-4.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Tyler Murray</a
                   >
                   <span class="user__verification"
@@ -751,10 +707,7 @@
               <div class="user">
                 <img src="img/user-4.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Tyler Murray</a
                   >
                   <span class="user__verification"
@@ -773,6 +726,7 @@
           <div
             class="future-card all-art__card all-art__card--bot all-art__card--bot--3"
           >
+            <a href="details.html" class="future-card__link"></a>
             <img
               src="img/future-card-3.jpg"
               alt=""
@@ -787,10 +741,7 @@
               <div class="user">
                 <img src="img/user-5.png" alt="avatar" class="user__avatar" />
                 <div class="user__bio">
-                  <a
-                    href="details.html"
-                    target="_blank"
-                    class="user__name user__name--pop"
+                  <a href="details.html" class="user__name user__name--pop"
                     >Warren Casey</a
                   >
                   <span class="user__verification"
@@ -808,11 +759,7 @@
           </div>
         </div>
         <div class="all-art__button-wrapper">
-          <a
-            href="details.html"
-            target="_blank"
-            class="button section-button all-art__button"
-          >
+          <a href="details.html" class="button section-button all-art__button">
             Больше постов<img
               src="img/button-arrow.svg"
               alt="icon: arrow"
@@ -876,7 +823,9 @@
       <div class="footer-container">
         <div class="footer__wrapper">
           <div class="footer__bio">
-            <a href="#"><img src="img/logo.png" alt="icon: logo" class="footer__logo" /></a>
+            <a href="index.html"
+              ><img src="img/logo.png" alt="icon: logo" class="footer__logo"
+            /></a>
             <p class="footer__description">
               Создайте современный и&nbsp;креативный веб-сайт с&nbsp;crealand
             </p>
@@ -885,6 +834,7 @@
                 <a
                   href="https://www.google.ru"
                   target="_blank"
+                  rel="nofollow noopener"
                   class="footer-social__link"
                   ><svg class="footer-social__icon">
                     <use xlink:href="img/sprite.svg#google"></use></svg
@@ -894,6 +844,7 @@
                 <a
                   href="https://twitter.com/?lang=ru"
                   target="_blank"
+                  rel="nofollow noopener"
                   class="footer-social__link"
                   ><svg class="footer-social__icon">
                     <use xlink:href="img/sprite.svg#twitter"></use></svg
@@ -903,6 +854,7 @@
                 <a
                   href="https://www.instagram.com/?hl=ru"
                   target="_blank"
+                  rel="nofollow noopener"
                   class="footer-social__link"
                   ><svg class="footer-social__icon">
                     <use xlink:href="img/sprite.svg#instagram"></use></svg
@@ -912,6 +864,7 @@
                 <a
                   href="https://www.linkedin.com/login"
                   target="_blank"
+                  rel="nofollow noopener"
                   class="footer-social__link"
                   ><svg class="footer-social__icon">
                     <use xlink:href="img/sprite.svg#linkedin"></use></svg
@@ -921,6 +874,7 @@
                 <a
                   href="https://www.youtube.com"
                   target="_blank"
+                  rel="nofollow noopener"
                   class="footer-social__link"
                   ><svg class="footer-social__icon">
                     <use xlink:href="img/sprite.svg#youtube"></use></svg
@@ -1008,6 +962,9 @@
           </div>
           <span class="bottom__text">Copyright © 2019. Crafted with love.</span>
         </div>
+        <a href="#" class="to-top"
+          ><img src="img/icon-up.svg" alt="icon: arrow"
+        /></a>
       </div>
     </footer>
     <div class="modal">

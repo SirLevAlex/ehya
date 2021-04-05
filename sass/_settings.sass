@@ -1,8 +1,12 @@
 *
   box-sizing: border-box
+html
+  scroll-behavior: smooth
 body
   font-family: 'Open Sans', sans-serif
   color: $text-light
+  width: 100vw
+  overflow-x: hidden
 .modal-open
   overflow: hidden
 img
@@ -36,6 +40,7 @@ button
   &:focus
     outline: none
 .button
+  cursor: pointer
   border-radius: 8px
   &-div
     display: flex
