@@ -55,8 +55,8 @@
     padding-bottom: 68px
     &__bio
       text-align: center
-    &-cards
-      height: 728px
+    &__card
+      margin-bottom: 16px
     &__title
       margin-bottom: 12px
     &__button
@@ -199,7 +199,7 @@
     padding-bottom: 83px
     &__wrapper
       display: grid
-      grid-template-columns: 10px 140px 138px
+      grid-template-columns: 10px 1fr 1fr
       grid-gap: 0
     &__bio
       display: flex
@@ -207,7 +207,7 @@
       align-items: center
       min-width: 263px
       grid-row: 3 / 4
-      gtid-column: 2 / 4
+      grid-column: 2 / 4
       text-align: center
       align-self: center
       margin: 15px auto
@@ -294,6 +294,9 @@
     max-height: 575px
     margin-top: 80px
     margin-bottom: 110px
+    &__text
+      min-height: 150px
+      max-height: 275px
     &__image
       margin-bottom: 35px
     &__avatar
@@ -349,7 +352,7 @@
       font-size: 14px
       line-height: 20px
   #mail-error
-    bottom: 50px
+    bottom: 48px
   #comment-error
     bottom: 45px
 @media (max-width: 459px)
@@ -370,10 +373,16 @@
     &__slider
       &-button
         top: 36%
+@media (max-width: 373px)
+  .quote
+    &__text
+      min-height: 240px
 @media (max-width: 344px)
   .list
     bottom: 720px
 @media (max-width: 330px)
   .quote
+    &__text
+      min-height: 270px
     &__avatar
       transform: translateY(45%)

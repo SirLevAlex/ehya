@@ -129,6 +129,8 @@
     &__button
       align-self: start
       margin-bottom: 0
+    &__card
+      margin-bottom: 30px
   .offer-card
     padding: 20px
     width: 48%
@@ -153,9 +155,14 @@
   .example
     &__slider
       &-container
+        margin-bottom: 27px
         max-width: 97%
       &-wrapper
         max-width: 90%
+    &__button
+      &-wrapper
+        display: flex
+        justify-content: center
   .all-art
     &__card
       &--bot
@@ -163,6 +170,8 @@
         width: 48%
         height: 290px
   .newsletter
+    &--details
+      border: none
     &-wave
       display: none
   .footer
@@ -178,7 +187,9 @@
     padding: 0 5%
     &-slider
       &-container
-        max-width: 97%
+        min-width: 100%
+        margin-right: 3%
+        margin-left: 0
     &__title
       &-big
         font-size: 30px
@@ -196,6 +207,8 @@
     &__text
       font-size: 28px
       line-height: 50px
+      min-height: 250px
+      max-height: 260px
     &__avatar
       transform: translateY(45%)
   .comment
@@ -210,6 +223,12 @@
     width: 40px
     height: 40px
     padding: 12px
+  .section
+    &-button
+      &--desctop
+        display: none
+      &--mobile
+        display: inline-block
 @media (max-width: 680px)
   .pop-tags
     &__name
@@ -222,6 +241,9 @@
     bottom: 700px
 @media (max-width: 663px)
   .quote
+    &__text
+      min-height: 300px
+      max-height: 310px
     &__avatar
       transform: translateY(15%)
 @media (max-width: 640px)
@@ -229,7 +251,6 @@
     &-cards
       flex-direction: column
       justify-content: space-between
-      height: 1288px
     &__button
       align-self: center
   .offer-card
@@ -253,20 +274,6 @@
   .last-art
     &__button
       align-self: center
-  .example
-    &__slider
-      &-container
-        margin-bottom: 27px
-    &__button
-      &-wrapper
-        display: flex
-        justify-content: center
-  .section
-    &-button
-      &--desctop
-        display: none
-      &--mobile
-        display: inline-block
   .all-art
     &__card
       &--bot
