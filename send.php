@@ -50,7 +50,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'mail.levanboryan.ru'; // SMTP сервера вашей почты
   $mail->Username   = 'besttour@levanboryan.ru'; // Логин на почте
-  $mail->Password   = '6A0u2X5k'; // Пароль на почте
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPAutoTLS = false;
   $mail->SMTPSecure = false;
   $mail->Port       = 25;
