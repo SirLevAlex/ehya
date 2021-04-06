@@ -33,10 +33,10 @@
                 <li class="header-menu__item">
                   <a href="#" class="header-menu__link">Домой</a>
                 </li>
-                <li data-target="#landing" class="header-menu__item">
+                <li class="header-menu__item">
                   <a href="#" class="header-menu__link"
                     >Лендинги
-                    <svg class="header-menu__icon">
+                    <svg data-target="#landing" class="header-menu__icon">
                       <use xlink:href="img/sprite.svg#menuarrow"></use>
                     </svg>
                   </a>
@@ -52,10 +52,10 @@
                     </li>
                   </ul>
                 </li>
-                <li data-target="#pages" class="header-menu__item">
+                <li class="header-menu__item">
                   <a href="#" class="header-menu__link"
                     >Страницы
-                    <svg class="header-menu__icon">
+                    <svg data-target="#pages" class="header-menu__icon">
                       <use xlink:href="img/sprite.svg#menuarrow"></use>
                     </svg>
                   </a>
@@ -96,7 +96,7 @@
     <section class="offer-detail">
       <div class="offer-detail__wrapper">
         <div class="offer-detail__container">
-          <div class="list offer-detail__list">
+          <div class="list offer-detail__list list--desctop">
             <span class="list__title">Share</span>
             <ul class="list__social">
               <li class="list__item">
@@ -389,6 +389,51 @@
               Гилкриз, заповедник для наблюдения за&nbsp;птицами Хендерсон
               и&nbsp;Mt. Чарльстон, но&nbsp;я&nbsp;думаю, вы&nbsp;поняли.
             </p>
+            <div class="list offer-detail__list list--mobile">
+            <span class="list__title">Share</span>
+            <ul class="list__social">
+              <li class="list__item">
+                <a
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="list__link"
+                  ><svg class="list__icon">
+                    <use xlink:href="img/sprite.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="list__link"
+                  ><svg class="list__icon">
+                    <use xlink:href="img/sprite.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://www.linkedin.com/login"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="list__link"
+                  ><svg class="list__icon">
+                    <use xlink:href="img/sprite.svg#linkedin"></use></svg
+                ></a>
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://www.instagram.com/?hl=ru"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="list__link"
+                  ><svg class="list__icon">
+                    <use xlink:href="img/sprite.svg#instagram"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
             <div class="user-wrapper user-wrapper--wb">
               <div class="user">
                 <img

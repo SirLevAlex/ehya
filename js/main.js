@@ -1,19 +1,11 @@
 $(document).ready(function () {
-  var menuItem = $(".header-menu__item");
+  var menuItem = $(".header-menu__icon");
   var content = $(".content");
   menuItem.on("click", function (event) {
     var activeContent = $(this).attr("data-target");
     $(activeContent).toggleClass("content--active");
   });
-
-  // $(document).mouseup(function (e) {
-  //   if (!content.is(e.target) && content.has(e.target).length === 0) {
-  //     content.removeClass("content--active");
-  //   } else {
-  //     content.removeClass("content--active");
-  //   }
-  // });
-
+  
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".menu").toggleClass("menu--mobile--visible");
